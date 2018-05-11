@@ -2047,3 +2047,8 @@ a.reserves-item:hover {
 .xtp_item.active + label{
 background: #fef7e7;
 }
+
+
+.xtp_item.not + label{
+	background: #f3f3f3
+}

@@ -344,72 +344,18 @@ global $wpdb, $premiumbox;
 								</h4>';
 								$exchange_table2_head .= get_xtp_temp($default, $valuts);
 			
-								$exchange_table2_head .='
-								<div class="numb right-ico">
-									<input class="sum" type="text" value="640.68 USD" disabled="disabled">
-									<img class="ico" src="images/privatbank-ico.png" alt="privatbank">
-								</div>
-								<div class="calculation">
-									<strong>57.469</strong> RUB = <strong>1.00</strong> USD
-								</div>
-								<h5 class="title">Введите личные данные:</h5>
-								<div class="user-data">
-									<label >
-										<span>Фамилия Имя Отчество</span>
-										<img src="images/question-ico.png" alt="question" data-toggle="tooltip" data-placement="bottom" title="Полное имя, как написано в паспорте">
-									</label>
-									<input type="text" name="full-name">
-									<div class="error">
-										<strong>Ошибка!</strong> Необходимо ввести фамилию имя отчество
-									</div>
-									<label >
-										<span>Номер телефона</span>
-									</label>
-									<input type="text" name="tell">
-									<div class="error">
-										<strong>Ошибка!</strong> Необходимо ввести номер телефона
-									</div>
-									<label >
-										<span>E-mail</span>
-									</label>
-									<input class="has-error" type="text" name="E-mail">
-									<div class="error has-error">
-										<strong>Ошибка!</strong> Необходимо ввести E-mail
-									</div>
-									<div class="secure-question">
-										<h5 class="title">Введите ответ:</h5>
-										<input type="text" value="3" disabled="disabled">
-										+
-										<input type="text" value="12" disabled="disabled">
-										=
-										<input type="text" placeholder="?">
-										<button>
-											<img src="images/refresh-ico.png" alt="refresh">
-										</button>
-									</div>
-									<div class="square-check">
-										<input type="checkbox" name="remember" id="remember">
-										<label for="remember">
-											Запомнить мои данные
-										</label>
-									</div>
-									<input class="yellow-btn" type="submit" value="Обменять сейчас">
-								</div>
-							</div>
-						</div> ';
-
 						
 					$temp .= apply_filters('exchange_table2_head',$exchange_table2_head, $vals1, $vals2);	
 							
 				
 
-						// $temp .='
-						// <div class="xtp_submit_wrap">
-						// 	<a href="'. get_exchange_link(is_isset($default,'naps_name')) .'" class="xtp_submit js_exchange_link" id="js_submit_button" data-naps="'. is_isset($default,'id') .'">'. __('Exchange','pn') .'</a>
-						// 		<div class="clear"></div>							
-						// </div>
+						$temp .='
+						<div class="xtp_submit_wrap">
+							<a href="'. get_exchange_link(is_isset($default,'naps_name')) .'" class="xtp_submit js_exchange_link" id="js_submit_button" data-naps="'. is_isset($default,'id') .'">'. __('Exchange','pn') .'</a>
+								<div class="clear"></div>							
+						</div>
 						
-						// <div id="js_error_div"></div>';
+						<div id="js_error_div"></div>';
 	return $temp;
 				}
 
@@ -456,8 +402,21 @@ function get_table2_naps_filter($naps, $val_types, $standart){
 add_filter('exchange_table2_part', 'def_exchange_table2_part', 10, 4);
 function def_exchange_table2_part($temp, $title, $naps, $place=''){
 	
-	 $temp .= '</div><div class="wallets">';
-	$temp .= $title;
+// Валюты
+
+	 $temp .= '</div><div class="wallets">
+	 <div class="xtp_table">
+	 <div class="xtp_table_ins">	
+		 <div class="xtp_table_title">
+			 <div class="xtp_table_title_ins">
+				 <span>'. $title .'</span>
+			 </div>
+		 </div>
+			 <div class="clear"></div>
+										 
+
+	 ';
+
 													
 					foreach($naps as $data){
 														
@@ -466,18 +425,16 @@ function def_exchange_table2_part($temp, $title, $naps, $place=''){
 														
 						$temp .= '
 						<!-- wallet -->
-					
-						<input class="xtp_item js_item js_item_'. $place .' '. $class .' '. $acl .'"  type="radio" name="wallets" value="'. $data['title'] .'" id="'. $data['title'] .'"  data-id="'. $data['psys_id'] .'">
-						<label for="'. $data['title'] .'">
+						<input type="radio" name="wallets"  >
+						<label for="'. $data['title'] .'" class=" js_item js_item_'. $place .' '. $class .' '. $acl .'" data-id="'. $data['psys_id'] .'" title="'. $data['title'] .'">
 							<img class="ico" src="'. $data['img'] .'" alt="advcash">
 							<span>
 							'. $data['title'] .'
 							</span>
 						</label>
-
 						<!-- /wallet -->	';						
 					} 
-					$temp .= '</div></div></div>';
+					$temp .= '</div></div></div></div></div>';
 	return $temp;
 }
 
