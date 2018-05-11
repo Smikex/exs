@@ -1,0 +1,510 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1365px) {
+	#header .logo {
+	    margin-right: 20px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>button{
+		padding: 12px 15px
+	}
+	.electronic_wallets .radio-btns,
+	.electronic_wallets .numb,
+	.electronic_wallets .main_title,
+	.electronic_wallets .title,
+	.electronic_wallets .calculation,
+	.titles,
+	.user-data {
+	    margin-left: 20px;
+	    margin-right: 20px;
+	}
+	.titles > .title,
+	.secure-question .title {
+		margin: 0;
+	}
+	.electronic_wallets .wallets label {
+		padding: 15px 10px;
+	}
+	.electronic_wallets .wallets label span {
+		margin-left: 5px;
+	}
+	.electronic_wallets .wallets .yellow-btn {
+		right: 5px;
+		padding: 10px 15px;
+	}
+	.partners .item {
+	    padding: 15px 10px;
+	}
+	.title-h1, .editor h1 {
+	    font-size: 24px;
+	}
+	.news-item .title-h1 {
+	    font-size: 15px;
+	}
+}
+@media only screen and (max-width : 1199px) {
+	#header .logo {
+	    margin-right: 20px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>button {
+		font-size: 14px;
+	    padding: 7px 12px;
+	}
+	#header .registration:before {
+	    margin-right: 10px;
+	}
+	#header .registration > button {
+	    padding: 7px 12px;
+	}
+	.electronic_wallets .title {
+	    font-size: 13px;
+	}
+	.secure-question {
+		font-size: 18px;
+	}
+	.secure-question input {
+	    font-size: 18px;
+	    width: 50px;
+	}
+	.electronic_wallets .main_title {
+	    font-size: 22px;
+	}
+	.last-changes .transaction .sums .sum {
+	    display: block;
+	    margin: 5px;
+	}
+	.title-h1 .ico {
+		display: block;
+		margin-top: 20px;
+	}
+	.icons-block .item {
+		margin-bottom: 30px;
+	    width: 50%;
+	}
+	.sidebar-transaction .transaction .sums span {
+	    display: block;
+	    margin: 5px 0;
+	}
+	.sidebar-login form .links {
+		text-align: center;
+	}
+	.sidebar-login form .links a {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.sidebar-login form .links a:last-child {
+	    float: none;
+	}
+	.lk-tabs.nav-tabs>li>a>span {
+		font-size: 12px;
+	}
+	.lk-wrap .input_wrap {
+	    margin-right: 40px;
+	}
+	table {
+	    font-size: 14px;
+	}
+	table th, table td {
+	    padding: 20px 0;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	#header .logo img {
+	    width: 112px;
+	}
+	#header .logo {
+	    margin-right: 10px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>button {
+		font-size: 12px;
+	    padding: 7px 6px;
+	}
+	.electronic_wallets{
+		margin: 30px 0;
+	}
+	#header .registration > button {
+	    padding: 7px 15px;
+	    font-size: 12px;
+	}
+	.sec_gray {
+		padding-top: 0;
+	}
+	.partners-wrap {
+		padding: 30px 0;
+	}
+	#footer .ft_menu li {
+	    margin-right: 25px;
+	}
+	.btns-wrap button.title-h1:after {
+	    right: 15px;
+	}
+	.top-title {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.sec_white {
+		margin-bottom: 0;
+		margin-top: 30px; 
+	}
+	.lk-wrap .input_wrap {
+	    display: block;
+	    margin-right: 0;
+	    width: 100%;
+	}
+	.lk-tabs > li {
+		margin-bottom: 25px;
+ 		width: 50%;
+	}
+	.lk-tabs.nav-tabs>li>a>span {
+		font-size: 14px;
+	}
+	.desktop-btn {
+		display: none;
+	}
+	.mobile-btn {
+		display: inline-block;
+	}
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	table tbody tr {
+		border: 1px solid #ccc;
+		border-bottom: none;
+	}
+	table tbody tr:nth-child(odd) {
+		background: #f6f6f6;
+	}
+	tr > td:last-child {
+		border-bottom: none;
+	}
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		overflow: hidden;
+	}
+	table {
+		border-bottom: 1px solid #ccc;
+	}
+	table th, table td {
+	    padding: 20px 10px;
+	}
+	table tr td > .title-response {
+		color: #3300cc;
+		display: block;
+    	font-family: 'GothamProBold';
+		width: 50%;
+		float: left;
+	}
+	table tr td > div{
+		float: left;
+		width: 50%;
+	}
+	.rates table tbody tr td > div.arrow:before {
+		display: none;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	#header .logo img {
+	    width: 142px;
+	}
+	.navbar-default .navbar-nav>li>a,
+	.navbar-default .navbar-nav>li>button {
+	    font-size: 16px;
+	    padding: 12px 20px;
+	}
+	.registration {
+		border-top: 1px solid #5c4a94;
+		padding-top: 8px; 
+	}
+	#header .registration:before {
+	    display: none;
+	}
+	.navbar-default .navbar-collapse {
+	    background: #1b016b;
+		position: absolute;
+	    right: -15px;
+	    top: 54px;
+	    z-index: 1;
+	}
+	.navbar-toggle {
+		border: none;
+		margin: 0;
+    	padding: 12px 0;
+	}
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+	    background-color: transparent;
+	}
+	.navbar-toggle .nav-menu__icon {
+	  height: 17px;
+	  position: relative;
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	  -webkit-transition: .5s ease-in-out;
+	  -moz-transition: .5s ease-in-out;
+	  -o-transition: .5s ease-in-out;
+	  transition: .5s ease-in-out;
+	  cursor: pointer;
+	  overflow: hidden;
+	  width: 25px;
+	}
+	.navbar-toggle .nav-menu__icon span {
+	  display: block;
+	  position: absolute;
+	  height: 2px;
+	  width: 100%;
+	  background: #FFFFFF;
+	  border-radius: 9px;
+	  opacity: 1;
+	  -webkit-transform: rotate(0deg);
+	  -moz-transform: rotate(0deg);
+	  -o-transform: rotate(0deg);
+	  transform: rotate(0deg);
+	  -webkit-transition: .25s ease-in-out;
+	  -moz-transition: .25s ease-in-out;
+	  -o-transition: .25s ease-in-out;
+	  transition: .25s ease-in-out;
+	}
+	.navbar-toggle.collapsed .nav-menu__icon span:nth-child(1) {
+	  top: 0px;
+	}
+	.navbar-toggle.collapsed .nav-menu__icon span:nth-child(2) {
+	  top: 6px;
+	}
+	.navbar-toggle.collapsed .nav-menu__icon span:nth-child(3) {
+	  top: 12px;
+	}
+	.navbar-toggle:not(.collapsed) .nav-menu__icon span:nth-child(1) {
+	  top: 7px;
+	  -webkit-transform: rotate(135deg);
+	  -moz-transform: rotate(135deg);
+	  -o-transform: rotate(135deg);
+	  transform: rotate(135deg);
+	}
+	.navbar-toggle:not(.collapsed) .nav-menu__icon span:nth-child(2) {
+	  opacity: 0;
+	  left: -60px;
+	}
+	.navbar-toggle:not(.collapsed) .nav-menu__icon span:nth-child(3) {
+	  top: 7px;
+	  -webkit-transform: rotate(-135deg);
+	  -moz-transform: rotate(-135deg);
+	  -o-transform: rotate(-135deg);
+	  transform: rotate(-135deg);
+	}
+	.log_in {
+		text-align: center;
+	}
+	.registration {
+		padding: 10px 15px;
+	}
+	.last-changes .transaction .sums .sum {
+	    display: inline-block;
+	    margin: 0 5px;
+	}
+	.modal-open {
+		padding-right: 0!important; 
+	}
+	.sidebar-transaction .transaction .sums span {
+	    display: inline-block;
+	}
+	.sidebar-transaction .transaction .sums .sum {
+		padding: 10px 15px;
+	}
+	.lk-tabs.nav-tabs>li>a>span {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width : 650px) {
+	#footer .ft_menu li {
+	    display: block;
+	    margin-right: 0;
+	    margin-bottom: 10px;
+	}
+	#success-request .modal-body,
+	#confirm-replenishment .modal-body,
+	#replenishment-purse .modal-body,
+	#verification-info .modal-body,
+	#verification .modal-body,
+	#authorization .modal-body,
+	#registration .modal-body {
+	    padding: 45px 15px 50px 15px;
+	}
+	#verification-loading .modal-body > img {
+	    margin: 25px 0;
+	}
+	.icons-block .item > div {
+		width: auto;
+	}
+	.icons-block .item {
+		margin-bottom: 30px;
+		text-align: center;
+	    width: 100%;
+	}
+	.lk-tabs > li {
+		text-align: center;
+		width: 100%;
+	}
+}
+@media only screen and (max-width : 520px){
+	#verification .photo-upload .yellow-btn,
+	#verification .photo-upload .status {
+		float: none;
+	}
+	#verification .photo-upload .yellow-btn {
+	    display: inline-block;
+        font-size: 16px;
+    	padding: 7px 20px;
+		width: auto;
+	}
+	#verification .photo-upload .status {
+		margin-top: 15px;
+		text-align: center;
+		width: 100%;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	.title-h1, .editor h1 {
+	    font-size: 25px;
+	}
+	.partners .item {
+		display: block;
+		text-align: center;
+	}
+	.modal-dialog .modal-title {
+	    font-size: 18px;
+	}
+	#confirm-replenishment .replenishment-wallet .wallets > img {
+		display: block;
+    	margin: 10px auto;
+	}
+	#confirm-replenishment .steps .step-wrap .text-block .yellow-btn,
+	#confirm-replenishment .buttons .yellow-btn {
+		font-size: 13px;
+		padding: 5px 25px;
+	}
+	#confirm-replenishment .steps .step-wrap .text-block .requisites td {
+	    padding: 15px 7px;
+	    font-size: 14px;
+	}
+	#confirm-replenishment .steps .step-wrap .text-block .requisites {
+	    padding: 10px;
+	}
+	#confirm-replenishment .steps .step-wrap .numb {
+		height: 30px;
+		font-size: 14px;
+		line-height: 30px;
+		width: 30px;
+	}
+	.modal-dialog p {
+	    font-size: 14px;
+	}
+	#confirm-replenishment .steps .step-wrap {
+	    background: url(../images/dots-repeat.jpg) repeat-y 10px;
+	}
+	#confirm-replenishment .steps .step-wrap .text-block {
+	    float: left;
+	    margin-top: 5px;
+	    padding-left: 9px;
+	    width: 90%;
+	    width: calc(100% - 30px);
+    }
+    #verification-info .modal-body .yellow-btn {
+    	font-size: 12px;
+    }
+    .icons-block .item > img {
+    	margin-bottom: 20px;
+    }
+    .icons-block .item > div {
+    	width: 100%;
+    }
+    .sidebar-transaction .transaction .sums span {
+	    display: block;
+	}
+	.lk-wrap {
+	    padding: 40px 0px;
+	}
+	.lk-tabs.nav-tabs>li>a>img {
+		display: block;
+	    margin: 0 auto 5px auto;
+	    vertical-align: middle;
+	}
+	table tr td > .title-response {
+		padding: 0;
+		width: 30%;
+	}
+	table tr td > div {
+		padding: 0 0 0 15px;
+	    width: 70%;
+	}
+	.sec_white {
+	    padding: 25px 15px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px) {
+	#confirm-replenishment .steps .step-wrap .text-block .requisites td {
+	    padding: 15px 2px;
+	}
+	.last-changes .transaction .sums .sum {
+	    display: block;
+	    margin: 5px;
+	}
+	#verification .requires {
+		font-size: 14px;
+	    padding: 20px 10px;
+	}
+	#verification .photo-upload .status {
+	    margin-top: 15px;
+	}
+	#authorization form .links {
+		font-size: 14px;
+	}
+	#authorization .yellow-btn {
+		font-size: 12px;
+	}
+	.lk-wrap .yellow-btn {
+		font-size: 14px; 
+	}
+	table tr td > .title-response {
+		margin-bottom: 15px;
+	}
+	table tr td > div,
+	table tr td > .title-response {
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+	table th, table td {
+	    padding: 10px;
+	}
+}
+@media only screen and (max-width : 360px) {
+	.title-h1, .editor h1 {
+	    font-size: 21px;
+	}
+	.yellow-btn {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width : 320px) {
+	
+}

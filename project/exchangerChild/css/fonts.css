@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'GothamProBold';
+    src: url('../fonts/GothamProBold/GothamProBold.eot');
+    src: url('../fonts/GothamProBold/GothamProBold.eot') format('embedded-opentype'),
+         url('../fonts/GothamProBold/GothamProBold.woff2') format('woff2'),
+         url('../fonts/GothamProBold/GothamProBold.woff') format('woff'),
+         url('../fonts/GothamProBold/GothamProBold.ttf') format('truetype'),
+         url('../fonts/GothamProBold/GothamProBold.svg#GothamProBold') format('svg');
+}
+@font-face {
+    font-family: 'GothamProBoldItalic';
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot');
+    src: url('../fonts/GothamProBoldItalic/GothamProBoldItalic.eot') format('embedded-opentype'),
+         url('../fonts/GothamProBoldItalic/GothamProBoldItalic.woff2') format('woff2'),
+         url('../fonts/GothamProBoldItalic/GothamProBoldItalic.woff') format('woff'),
+         url('../fonts/GothamProBoldItalic/GothamProBoldItalic.ttf') format('truetype'),
+         url('../fonts/GothamProBoldItalic/GothamProBoldItalic.svg#GothamProBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'GothamProItalic';
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot');
+    src: url('../fonts/GothamProItalic/GothamProItalic.eot') format('embedded-opentype'),
+         url('../fonts/GothamProItalic/GothamProItalic.woff2') format('woff2'),
+         url('../fonts/GothamProItalic/GothamProItalic.woff') format('woff'),
+         url('../fonts/GothamProItalic/GothamProItalic.ttf') format('truetype'),
+         url('../fonts/GothamProItalic/GothamProItalic.svg#GothamProItalic') format('svg');
+}
+@font-face {
+    font-family: 'GothamProRegular';
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot');
+    src: url('../fonts/GothamProRegular/GothamProRegular.eot') format('embedded-opentype'),
+         url('../fonts/GothamProRegular/GothamProRegular.woff2') format('woff2'),
+         url('../fonts/GothamProRegular/GothamProRegular.woff') format('woff'),
+         url('../fonts/GothamProRegular/GothamProRegular.ttf') format('truetype'),
+         url('../fonts/GothamProRegular/GothamProRegular.svg#GothamProRegular') format('svg');
+}
+@font-face {
+    font-family: 'GothamProLightItalic';
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot');
+    src: url('../fonts/GothamProLightItalic/GothamProLightItalic.eot') format('embedded-opentype'),
+         url('../fonts/GothamProLightItalic/GothamProLightItalic.woff2') format('woff2'),
+         url('../fonts/GothamProLightItalic/GothamProLightItalic.woff') format('woff'),
+         url('../fonts/GothamProLightItalic/GothamProLightItalic.ttf') format('truetype'),
+         url('../fonts/GothamProLightItalic/GothamProLightItalic.svg#GothamProBoldItalic') format('svg');
+}
